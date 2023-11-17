@@ -36,7 +36,7 @@ app.put("/veiculos/:id",(req,res) =>{
 });
 
 //Excluir um veiculos
-app.put("/veiculos/:id",(req,res) =>{
+app.delete("/veiculos/:id",(req,res) =>{
     const veiculosID = veiculos.find (x => x.id == req.params.id)
     const indexVeiculo = veiculos.indexOf(veiculosID)
     veiculos.splice(indexVeiculo, 1)
